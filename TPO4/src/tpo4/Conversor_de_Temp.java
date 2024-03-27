@@ -4,6 +4,8 @@
  */
 package tpo4;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Alakyan
@@ -87,7 +89,12 @@ public class Conversor_de_Temp extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jb1ActionPerformed
-       rta.setText(Double.parseDouble(celcius.getText())*9/5 + 32+" F°");
+      try{
+      
+        rta.setText(Double.parseDouble(celcius.getText())*9/5 + 32+" F°");
+        } catch(Exception e){
+        JOptionPane.showMessageDialog(this,"Usted debe ingresar un número" );
+        }
     }//GEN-LAST:event_jb1ActionPerformed
 
     /**

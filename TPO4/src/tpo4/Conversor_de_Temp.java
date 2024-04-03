@@ -94,6 +94,7 @@ public class Conversor_de_Temp extends javax.swing.JFrame {
         rta.setText(Double.parseDouble(celcius.getText())*9/5 + 32+" F°");
         } catch(Exception e){
         JOptionPane.showMessageDialog(this,"Usted debe ingresar un número" );
+        celcius.setText("");
         }
     }//GEN-LAST:event_jb1ActionPerformed
 
